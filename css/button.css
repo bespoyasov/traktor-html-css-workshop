@@ -1,0 +1,53 @@
+.button {
+  -webkit-appearance: none;
+  appearance: none;
+
+  background-color: white;
+  border: 1px solid var(--border-color);
+
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 800;
+
+  padding: 10px 15px;
+  border-radius: 16px;
+
+  cursor: pointer;
+}
+
+.button_login {
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/user-icon.svg);
+  background-position: center;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--interactive-color);
+  box-shadow: 0px 3px 4px rgba(75, 75, 124, 0.05),
+    0px 0px 2px rgba(75, 75, 124, 0.2);
+}
+
+.button:active {
+  background-color: var(--interactive-color);
+  box-shadow: inset 0px 2px 2px rgba(20, 20, 55, 0.1);
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  background-color: var(--disabled-bg-color);
+  color: var(--disabled-color);
+}
+
+.button_primary {
+  color: white;
+  background-color: var(--accent-color);
+  border: 0;
+}
+
+.button_primary:hover,
+.button_primary:focus,
+.button_primary:active {
+  background-color: var(--accent-dim-color);
+}

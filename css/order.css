@@ -1,0 +1,34 @@
+.order {
+  padding: 1rem 0;
+}
+
+.order__title,
+.order__label,
+.order__ingredients {
+  margin: 0.2rem 0;
+}
+
+.order__ingredients,
+.order__ingredients li {
+  list-style: none;
+  padding: 0;
+}
+
+.order__ingredients {
+  display: flex;
+}
+
+.order__ingredient:not(:last-child)::after {
+  content: "·";
+  margin: 0 5px;
+}
+
+.order__group {
+  margin: 1.5rem 0;
+}
+
+.order__group_limited {
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+}

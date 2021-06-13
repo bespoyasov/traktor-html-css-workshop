@@ -1,0 +1,14 @@
+.ingredients,
+.ingredients__item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ingredients {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max(33%, 115px);
+  gap: 15px;
+  margin: 10px 0 5px;
+}

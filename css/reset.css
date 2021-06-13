@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}

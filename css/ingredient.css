@@ -1,0 +1,104 @@
+.ingredient {
+  position: relative;
+  display: block;
+
+  padding: 70px 12px 12px;
+
+  background: white;
+  box-shadow: 0px 8px 16px rgba(75, 75, 124, 0.05);
+  border: 2px solid white;
+  border-radius: 12px;
+
+  font-size: 1.4rem;
+  line-height: 1.42;
+  cursor: pointer;
+}
+
+.ingredient__title {
+  display: block;
+  margin: 0 0 5px;
+}
+
+.ingredient__price {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.ingredient__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ingredient_selected {
+  font-weight: 600;
+  border-color: var(--accent-color);
+}
+
+.ingredient:focus-within {
+  border-color: var(--adornment-color);
+}
+
+.ingredient::before {
+  content: "";
+  display: block;
+
+  background-image: url(../images/toppings.png);
+  background-size: 104px auto;
+  background-position-x: center;
+
+  width: 100px;
+  height: 80px;
+
+  top: -15px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+}
+
+.ingredient_mozarella::before {
+  background-position-y: 890px;
+}
+.ingredient_cheddar::before {
+  background-position-y: 2047px;
+}
+.ingredient_dor-blue::before {
+  background-position-y: 975px;
+}
+.ingredient_tomato::before {
+  background-position-y: 390px;
+}
+.ingredient_mushrooms::before {
+  background-position-y: -95px;
+}
+.ingredient_pepper::before {
+  background-position-y: 1059px;
+}
+.ingredient_pineapple::before {
+  background-position-y: 1227px;
+}
+.ingredient_olives::before {
+  background-position-y: 556px;
+}
+.ingredient_onion::before {
+  background-position-y: 310px;
+}
+.ingredient_broccoli::before {
+  background-position-y: 152px;
+}
+.ingredient_bacon::before {
+  background-position-y: 82px;
+}
+.ingredient_pepperoni::before {
+  background-position-y: 228px;
+}
+.ingredient_ham::before {
+  background-position-y: 473px;
+}
+.ingredient_chicken::before {
+  background-position-y: 723px;
+}
+.ingredient_salami::before {
+  background-position-y: 642px;
+}

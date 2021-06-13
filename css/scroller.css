@@ -1,0 +1,14 @@
+.scroller {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+
+  margin: -15px;
+  padding: 15px;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.scroller::-webkit-scrollbar {
+  display: none;
+}

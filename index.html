@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Артём Пицца</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo header__logo">
+      <img src="images/logo.svg" alt="Логотип пиццерии" width="155" height="24">
+    </a>
+
+    <button type="button" class="button button_login">
+      <span class="visually-hidden">Войти в аккаунт</span>
+    </button>
+  </header>
+
+  <main class="main">
+    <h1>Собери свою пиццу</h1>
+
+    <section class="showcase">
+      <h2 class="visually-hidden">Выбранные ингредиенты</h2>
+
+      <ul class="showcase__components">
+        <li class="showcase__component showcase__component_dough">
+          <figure>
+            <img src="images/thin.png" srcset="images/thin.png 1x, images/thin@2x.png 2x" class="showcase__image">
+            <figcaption class="visually-hidden">Тонкое тесто из высшего сорта пшеницы с классическим томатным соусом</figcaption>
+          </figure>
+        </li>
+        <li class="showcase__component showcase__component_cheese">
+          <figure>
+            <img src="images/mozarella.png" srcset="images/mozarella.png 1x, images/mozarella@2x.png 2x" class="showcase__image">
+            <figcaption class="visually-hidden">100 граммов сыра моцарелла</figcaption>
+          </figure>
+        </li>
+        <li class="showcase__component showcase__component_vegetables">
+          <figure>
+            <img src="images/tomato.png" srcset="images/tomato.png 1x, images/tomato@2x.png 2x" class="showcase__image">
+            <figcaption class="visually-hidden">Слегка обжаренные томаты</figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
+
+    <section class="order">
+      <h2 class="order__title">Твоя пицца</h2>
+      <p class="order__label">30 см на толстом тесте</p>
+      <ul class="order__ingredients">
+        <li class="order__ingredient">Томатный соус</li>
+        <li class="order__ingredient">Моцарелла</li>
+        <li class="order__ingredient">Томаты</li>
+      </ul>
+
+      <form action="" id="order">
+
+        <div class="order__group order__group_limited">
+          <fieldset class="fieldset">
+            <legend class="fieldset__title">Размер</legend>
+
+            <div class="fieldset__content">
+              <ul class="radio">
+                <li class="radio__item">
+                  <label class="radio__option">
+                    <input type="radio" name="size" value="30" class="radio__input" checked>
+                    <span class="radio__label">30 см</span>
+                  </label>
+                </li>
+                <li class="radio__item">
+                  <label class="radio__option">
+                    <input type="radio" name="size" value="35" class="radio__input">
+                    <span class="radio__label">35 см</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <legend class="fieldset__title">Тесто</legend>
+
+            <div class="fieldset__content">
+              <ul class="radio">
+                <li class="radio__item">
+                  <label class="radio__option">
+                    <input type="radio" name="dough" value="thin" class="radio__input" checked>
+                    <span class="radio__label">Тонкое</span>
+                  </label>
+                </li>
+                <li class="radio__item">
+                  <label class="radio__option">
+                    <input type="radio" name="dough" value="thick" class="radio__input">
+                    <span class="radio__label">Пышное</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="order__group">
+          <fieldset class="fieldset">
+            <legend class="fieldset__title">Выберите соус</legend>
+
+            <div class="fieldset__content scroller">
+              <ul class="radio">
+                <li class="radio__item">
+                  <label class="radio__option">
+                    <input type="radio" name="sauce" value="tomato" class="radio__input" checked>
+                    <span class="radio__label">Томатный</span>
+                  </label>
+                </li>
+                <li class="radio__item">
+                  <label class="radio__option">
+                    <input type="radio" name="sauce" value="mayo" class="radio__input">
+                    <span class="radio__label">Майонез</span>
+                  </label>
+                </li>
+                <li class="radio__item">
+                  <label class="radio__option">
+                    <input type="radio" name="sauce" value="cheese" class="radio__input">
+                    <span class="radio__label">Сырный</span>
+                  </label>
+                </li>
+                <li class="radio__item">
+                  <label class="radio__option">
+                    <input type="radio" name="sauce" value="mushroom" class="radio__input">
+                    <span class="radio__label">Грибной</span>
+                  </label>
+                </li>
+                <li class="radio__item">
+                  <label class="radio__option">
+                    <input type="radio" name="sauce" value="thousand-islands" class="radio__input">
+                    <span class="radio__label">1000 островов</span>
+                  </label>
+                </li>
+                <li class="radio__item">
+                  <label class="radio__option">
+                    <input type="radio" name="sauce" value="mustard" class="radio__input">
+                    <span class="radio__label">Горчичный</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="order__group">
+          <fieldset class="fieldset">
+            <legend class="fieldset__title">Добавьте сыр</legend>
+            <div class="fieldset__content scroller">
+              <ul class="ingredients">
+                <li class="ingredients__item">
+                  <label class="ingredient ingredient_mozarella ingredient_selected checkbox">
+                    <span class="ingredient__title">Моцарелла</span>
+
+                    <span class="ingredient__footer">
+                      <span class="ingredient__price">29 ₽</span>
+
+                      <input type="checkbox" class="checkbox__input" name="cheese" value="mozarella" checked>
+                      <span class="checkbox__box"></span>
+                    </span>
+                  </label>
+                </li>
+                <li class="ingredients__item">
+                  <label class="ingredient ingredient_cheddar ingredient_selected checkbox">
+                    <span class="ingredient__title">Чеддер</span>
+
+                    <span class="ingredient__footer">
+                      <span class="ingredient__price">29 ₽</span>
+
+                      <input type="checkbox" class="checkbox__input" name="cheese" value="cheddar" checked>
+                      <span class="checkbox__box"></span>
+                    </span>
+                  </label>
+                </li>
+                <li class="ingredients__item">
+                  <label class="ingredient ingredient_dor-blue ingredient_selected checkbox">
+                    <span class="ingredient__title">Дор блю</span>
+
+                    <span class="ingredient__footer">
+                      <span class="ingredient__price">29 ₽</span>
+
+                      <input type="checkbox" class="checkbox__input" name="cheese" value="dor-blue" checked>
+                      <span class="checkbox__box"></span>
+                    </span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="order__group">
+          <fieldset class="fieldset">
+            <legend class="fieldset__title">Добавьте овощи</legend>
+            <div class="fieldset__content scroller">
+              <ul class="ingredients">
+                <li class="ingredients__item">
+                  <label class="ingredient ingredient_tomato ingredient_selected checkbox">
+                    <span class="ingredient__title">Томаты</span>
+
+                    <span class="ingredient__footer">
+                      <span class="ingredient__price">29 ₽</span>
+
+                      <input type="checkbox" class="checkbox__input" name="vegetables" value="tomato" checked>
+                      <span class="checkbox__box"></span>
+                    </span>
+                  </label>
+                </li>
+                <li class="ingredients__item">
+                  <label class="ingredient ingredient_mushrooms checkbox">
+                    <span class="ingredient__title">Грибы</span>
+
+                    <span class="ingredient__footer">
+                      <span class="ingredient__price">29 ₽</span>
+
+                      <input type="checkbox" class="checkbox__input" name="vegetables" value="mushrooms">
+                      <span class="checkbox__box"></span>
+                    </span>
+                  </label>
+                </li>
+                <li class="ingredients__item">
+                  <label class="ingredient ingredient_pepper checkbox">
+                    <span class="ingredient__title">Перец</span>
+
+                    <span class="ingredient__footer">
+                      <span class="ingredient__price">29 ₽</span>
+
+                      <input type="checkbox" class="checkbox__input" name="vegetables" value="pepper">
+                      <span class="checkbox__box"></span>
+                    </span>
+                  </label>
+                </li>
+                <li class="ingredients__item">
+                  <label class="ingredient ingredient_pineapple checkbox">
+                    <span class="ingredient__title">Ананас</span>
+
+                    <span class="ingredient__footer">
+                      <span class="ingredient__price">29 ₽</span>
+
+                      <input type="checkbox" class="checkbox__input" name="vegetables" value="pineapple">
+                      <span class="checkbox__box"></span>
+                    </span>
+                  </label>
+                </li>
+                <li class="ingredients__item">
+                  <label class="ingredient ingredient_olives checkbox">
+                    <span class="ingredient__title">Оливки</span>
+
+                    <span class="ingredient__footer">
+                      <span class="ingredient__price">29 ₽</span>
+
+                      <input type="checkbox" class="checkbox__input" name="vegetables" value="olives">
+                      <span class="checkbox__box"></span>
+                    </span>
+                  </label>
+                </li>
+                <li class="ingredients__item">
+                  <label class="ingredient ingredient_onion checkbox">
+                    <span class="ingredient__title">Лук</span>
+
+                    <span class="ingredient__footer">
+                      <span class="ingredient__price">29 ₽</span>
+
+                      <input type="checkbox" class="checkbox__input" name="vegetables" value="onion">
+                      <span class="checkbox__box"></span>
+                    </span>
+                  </label>
+                </li>
+                <li class="ingredients__item">
+                  <label class="ingredient ingredient_broccoli checkbox">
+                    <span class="ingredient__title">Брокколи</span>
+
+                    <span class="ingredient__footer">
+                      <span class="ingredient__price">29 ₽</span>
+
+                      <input type="checkbox" class="checkbox__input" name="vegetables" value="broccoli">
+                      <span class="checkbox__box"></span>
+                    </span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="order__group">
+          <fieldset class="fieldset">
+            <legend class="fieldset__title">Добавьте мясо</legend>
+            <div class="fieldset__content scroller">
+              <ul class="ingredients">
+                <li class="ingredients__item">
+                  <label class="ingredient ingredient_bacon ingredient_selected checkbox">
+                    <span class="ingredient__title">Бекон</span>
+
+                    <span class="ingredient__footer">
+                      <span class="ingredient__price">29 ₽</span>
+
+                      <input type="checkbox" class="checkbox__input" name="meat" value="bacon" checked>
+                      <span class="checkbox__box"></span>
+                    </span>
+                  </label>
+                </li>
+                <li class="ingredients__item">
+                  <label class="ingredient ingredient_pepperoni checkbox">
+                    <span class="ingredient__title">Пепперони</span>
+
+                    <span class="ingredient__footer">
+                      <span class="ingredient__price">29 ₽</span>
+
+                      <input type="checkbox" class="checkbox__input" name="meat" value="pepperoni">
+                      <span class="checkbox__box"></span>
+                    </span>
+                  </label>
+                </li>
+                <li class="ingredients__item">
+                  <label class="ingredient ingredient_ham checkbox">
+                    <span class="ingredient__title">Ветчина</span>
+
+                    <span class="ingredient__footer">
+                      <span class="ingredient__price">29 ₽</span>
+
+                      <input type="checkbox" class="checkbox__input" name="meat" value="ham">
+                      <span class="checkbox__box"></span>
+                    </span>
+                  </label>
+                </li>
+                <li class="ingredients__item">
+                  <label class="ingredient ingredient_chicken checkbox">
+                    <span class="ingredient__title">Курица</span>
+
+                    <span class="ingredient__footer">
+                      <span class="ingredient__price">29 ₽</span>
+
+                      <input type="checkbox" class="checkbox__input" name="meat" value="chicken">
+                      <span class="checkbox__box"></span>
+                    </span>
+                  </label>
+                </li>
+                <li class="ingredients__item">
+                  <label class="ingredient ingredient_salami checkbox">
+                    <span class="ingredient__title">Салями</span>
+
+                    <span class="ingredient__footer">
+                      <span class="ingredient__price">29 ₽</span>
+
+                      <input type="checkbox" class="checkbox__input" name="meat" value="salami">
+                      <span class="checkbox__box"></span>
+                    </span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <button class="button button_primary u-100" type="submit" form="order">Заказать за 200 руб</button>
+  </footer>
+</body>
+</html>

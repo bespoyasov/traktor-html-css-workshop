@@ -1,0 +1,40 @@
+.showcase {
+  padding-top: 90%;
+
+  background-image: url(../images/plate.png);
+  background-size: contain;
+  background-position: center;
+}
+
+.showcase__components {
+  margin: -90% 9% 90% 0;
+  position: relative;
+}
+
+.showcase__components,
+.showcase__components li {
+  list-style: none;
+  padding: 0;
+}
+
+.showcase__component {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.showcase__image {
+  width: 100%;
+}
+
+.showcase__component_dough {
+  margin: 4%;
+}
+
+.showcase__component_cheese {
+  margin: 7%;
+}
+
+.showcase__component_vegetables {
+  margin: 10%;
+}

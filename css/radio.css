@@ -1,0 +1,62 @@
+.radio,
+.radio__item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.radio {
+  display: grid;
+  grid-auto-flow: column;
+  width: max-content;
+
+  padding: 2px;
+  background-color: var(--interactive-color);
+  border-radius: 12px;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.radio__input {
+  /* Reset appearance: */
+  -webkit-appearance: none;
+  appearance: none;
+
+  /* Visually Hidden: */
+  position: absolute;
+  height: 1px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+
+  /* Fix Webkit and Chromium Layout Issue: */
+  left: 0;
+}
+
+.radio__label {
+  cursor: pointer;
+  padding: 3px 10px;
+  font-size: 1.4rem;
+  line-height: 1.42;
+  border-radius: 10px;
+  display: block;
+}
+
+.radio__input:checked + .radio__label {
+  background-color: white;
+  box-shadow: 0px 3px 4px rgba(75, 75, 124, 0.05),
+    0px 0px 2px rgba(75, 75, 124, 0.2);
+
+  /* Either: */
+  font-weight: 600;
+  letter-spacing: -0.01em;
+
+  /* Or: */
+  /* text-shadow: 0.01em 0 0; */
+}
+
+.radio__input:hover + .radio__label,
+.radio__input:focus + .radio__label {
+  box-shadow: 0 0 0 2px var(--accent-color);
+}

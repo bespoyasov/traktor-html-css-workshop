@@ -1,0 +1,14 @@
+:root {
+  --main-font: "Nunito", sans-serif;
+
+  --main-color: #4b4b7c;
+  --dark-color: #1f1f33;
+  --accent-color: #00a896;
+  --accent-dim-color: #009485;
+  --adornment-color: #ff6100;
+
+  --border-color: #e1e1ed;
+  --interactive-color: #f9f9fb;
+  --disabled-bg-color: #e1e1ed;
+  --disabled-color: #8181b1;
+}
