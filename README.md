@@ -1,10 +1,14 @@
-# Воркшоп для Трактора по базовой вёрстке
+# HTML & CSS Workshop for Traktor School
 
-В первой части мы сверстаем разметку приложения для заказа пиццы и научимся применять правильные теги. Разберёмся, что такое семантика и почему она важна. Научимся правильно выбирать подходящие контролы форм, выбирать между ссылками и кнопками. Выполним требования по базовой доступности и валидности.
+> Read this [in Russian](./docs/ru.md).
 
-Во второй части застилизуем страницу под макет. Превратим стандартные браузерные контроллы в кастомные, оставив при этом всю функциональность, которую обеспечивает браузер. Разберёмся в разнице между контентными и декоративными изображениями, научимся оптимизировать графику и её загрузку. Поговорим о композиции стилей и методологии БЭМ.
+In the first part, we'll create the HTML skeleton for the pizza ordering app and learn how to use correct HTML tags. We'll see what semantics is and why it is important. We'll learn how to choose the right form controls, how to choose between links and buttons. Also, we'll fulfill the requirements for basic accessibility.
 
-## Записи воркшопа
+In the second part, we'll style the page. We'll convert the standard browser controls into custom once, while retaining all the functionality provided by the browser. We'll understand the difference between content and decorative images, learn how to optimize graphics and its loading. Also, we'll talk about style composition and the BEM methodology.
 
-1. [Пишем HTML-код](https://www.youtube.com/watch?v=kbG5LjDmbEI)
-1. [Стилизуем страницу](https://www.youtube.com/watch?v=ZqLgzJ-8iGo)
+## Workshop on YouTube
+
+The video is in Russian. Subtitles are getting ready ;–)
+
+1. [Part 1: Creating HTML Skeleton](https://www.youtube.com/watch?v=kbG5LjDmbEI)
+1. [Part 2: Styling the Page](https://www.youtube.com/watch?v=ZqLgzJ-8iGo)
