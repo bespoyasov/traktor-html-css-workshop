@@ -8,7 +8,7 @@ In the second part, we'll style the page. We'll convert the standard browser con
 
 ## Workshop on YouTube
 
-The video is in Russian. Subtitles are getting ready ;–)
-
 1. [Part 1: Creating HTML Skeleton](https://www.youtube.com/watch?v=kbG5LjDmbEI)
 1. [Part 2: Styling the Page](https://www.youtube.com/watch?v=ZqLgzJ-8iGo)
+
+(In Russian with English subtitles.)
